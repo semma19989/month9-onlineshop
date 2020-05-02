@@ -8,8 +8,8 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor(access = AccessLevel.PACKAGE) @NoArgsConstructor
 @Entity
-@Table(name = "user")
-public class User {
+@Table(name = "product")
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -18,8 +18,16 @@ public class User {
     private String name;
 
     @Column(length = 45)
-    private String mail;
+    private String description;
 
-    @Column(length = 45)
-    private String password;
+    @Column
+    private Float price;
+
+    @ManyToOne
+    @JoinColumn(name = "categories_id")
+    private Category category;
+
+    @ManyToOne
+    @JoinColumn(name = "brands_id")
+    private Brand brand;
 }

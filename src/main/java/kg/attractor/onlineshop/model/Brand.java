@@ -3,13 +3,14 @@ package kg.attractor.onlineshop.model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Builder
 @AllArgsConstructor(access = AccessLevel.PACKAGE) @NoArgsConstructor
 @Entity
-@Table(name = "user")
-public class User {
+@Table(name = "brands")
+public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -17,9 +18,7 @@ public class User {
     @Column(length = 45)
     private String name;
 
-    @Column(length = 45)
-    private String mail;
-
-    @Column(length = 45)
-    private String password;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "brand")
+    @OrderBy("name ASC")
+    List<Product> products;
 }
