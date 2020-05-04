@@ -2,18 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lesson 65. JPA & ORM</title>
+    <title>Smart-Shop</title>
 </head>
 <body>
 <h1>Содержимое страницы</h1>
-
+<h2>Brands</h2>
 <ul>
-    <#list brands as brand>
+    <#list brands as product>
         <li>
-            <p>${brand.id} - ${brand.name} - ${brand.icon}</p>
+            <p>ID: ${product.id}</p>
+            <p>Name: ${product.name}</p>
+        </li>
+    </#list>
+</ul>
+<h2>Categories</h2>
+<ul>
+    <#list categories as cat>
+        <li>
+            <p>ID: ${cat.id}</p>
+            <p>Name: ${cat.name}</p>
+            <p>Description: ${cat.description}</p>
         </li>
     </#list>
 </ul>
 
 </body>
-</html>
+</htm
