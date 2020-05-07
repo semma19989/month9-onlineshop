@@ -1,4 +1,4 @@
-package kg.attractor.onlineshop.model;
+package kg.attractor.onlineshop.product;
 
 import lombok.*;
 

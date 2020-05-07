@@ -1,9 +1,7 @@
-package kg.attractor.onlineshop.controller;
+package kg.attractor.onlineshop.product;
 
 
-import kg.attractor.onlineshop.repository.BrandRepository;
-import kg.attractor.onlineshop.repository.CategoryRepository;
-import kg.attractor.onlineshop.repository.UserRepository;
+import kg.attractor.onlineshop.user.UserRepository;
 import org.apache.catalina.Group;
 import org.apache.catalina.Role;
 import org.apache.catalina.User;
@@ -14,12 +12,10 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 import java.util.Iterator;
-import java.util.List;
 
 @Controller
 public class RestController {

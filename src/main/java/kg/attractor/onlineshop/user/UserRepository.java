@@ -1,4 +1,4 @@
-package kg.attractor.onlineshop.repository;
+package kg.attractor.onlineshop.user;
 
 
 import org.apache.catalina.User;

@@ -1,7 +1,7 @@
-package kg.attractor.onlineshop.repository;
+package kg.attractor.onlineshop.product;
 
 
-import kg.attractor.onlineshop.model.Product;
+import kg.attractor.onlineshop.product.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import java.util.List;

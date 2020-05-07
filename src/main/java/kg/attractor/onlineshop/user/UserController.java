@@ -1,4 +1,4 @@
-package kg.attractor.onlineshop.controller;
+package kg.attractor.onlineshop.user;
 
 import org.springframework.stereotype.Controller;
 

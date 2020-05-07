@@ -1,4 +1,4 @@
-package kg.attractor.onlineshop.model;
+package kg.attractor.onlineshop.user;
 
 import lombok.*;
 
@@ -37,4 +37,5 @@ public class User {
     @Size(min=5, max = 45,message = "Пароль не должен быть меньше 5 и не больше 40 символов")
     @Column(length = 45)
     private String password;
+
 }

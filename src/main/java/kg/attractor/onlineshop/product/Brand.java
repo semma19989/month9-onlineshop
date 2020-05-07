@@ -1,5 +1,6 @@
-package kg.attractor.onlineshop.model;
+package kg.attractor.onlineshop.product;
 
+import kg.attractor.onlineshop.product.Product;
 import lombok.*;
 
 import javax.persistence.*;
